@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 10px;
+    margin: 0 auto;
+    background-color: #fffeef;
+    max-width: 1200px;
+
+    /* Page header */
+    & header{
+        & h1{
+            text-align: center;
+            color: #123524;
+        }
+        & nav{
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            & a{
+                padding: 5px 8px;
+                text-decoration: none;
+                color: #fffeef;
+                font-weight: 600;
+                font-size: 1.2rem;
+                background-color: #85A947;
+            }
+        }
+    }
+
+    /* main */
+    & main{
+        padding: 10px;
+        /* main header */
+        & header{
+            & h1{
+                color: #0e643b;
+                text-align: center;
+            }
+        }
+
+        /* plants section */
+        & .plants{
+            padding: 10px 0;
+            /* section header */
+            & h2{
+                color: #3E7B27;
+                padding: 10px 0;
+            }
+            & .details{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                align-items: center;
+                & p{
+                    color: #123524;
+                    text-align: justify;
+                    text-justify: justify;
+                    max-width: 800px;
+                }
+                & figure {
+                    margin: 10px 0;
+                    & img{
+                    width: 20rem;
+                    height: 15rem;
+                    border-radius: 10px;
+                }
+                }
+                & figcaption{
+                    color: gray;
+                    font-style: italic;
+                    text-align: center;
+                }
+            }
+        }
+
+        /* types section */
+        & .types{
+            margin: 10px 0;
+            /* section header */
+            & h2{
+                color: #3E7B27;
+                padding: 10px 0;
+            }
+            & .details{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                align-items: center;
+                & p{
+                    color: #123524;
+                    text-align: justify;
+                    text-justify: justify;
+                }
+                & .plant-type{
+                    margin: 10px 0;
+                    & h3{
+                        color: #85A947;
+                        margin: 5px 0;
+                    }
+                    & .type-info{
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        & p{
+                            color: #123524;
+                            text-align: justify;
+                            text-justify: justify;
+                        }
+                        & .types-images{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            flex-wrap: wrap;
+                            align-items: center;
+                            gap: 1rem;
+                            & figure {
+                                margin: 10px 0;
+                                & img{
+                                width: 20rem;
+                                height: 15rem;
+                                border-radius: 10px;
+                            }
+                            }
+                            & figcaption{
+                                color: gray;
+                                font-style: italic;
+                                text-align: center;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+
+        /* kigdoms section */
+        & .kingdoms{
+            margin: 10px 0;
+            /* section header */
+            & h2{
+                color: #3E7B27;
+                padding: 10px 0;
+            }
+            & .details{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                align-items: center;
+                & p{
+                    color: #123524;
+                    text-align: justify;
+                    text-justify: justify;
+                }
+                & .kingdom-type{
+                    margin: 10px 0;
+                    & h3{
+                        color: #85A947;
+                        margin: 5px 0;
+                    }
+                    & .kingdom-info{
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        & p{
+                            color: #123524;
+                            text-align: justify;
+                            text-justify: justify;
+                        }
+                        & .kingdom-images{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            flex-wrap: wrap;
+                            align-items: center;
+                            gap: 1rem;
+                            & figure {
+                                margin: 10px 0;
+                                & img{
+                                width: 20rem;
+                                height: 15rem;
+                                border-radius: 10px;
+                            }
+                            }
+                            & figcaption{
+                                color: gray;
+                                font-style: italic;
+                                text-align: center;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    & footer{
+        background-color: #85A947;
+        margin: 20px 0;
+        & p{
+            color: #fffeef;
+            text-align: center;
+        }
+    }
+}
